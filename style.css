@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: thistle;
+}
+
+.squares {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 680px;
+    height: 680px;
+    background-color: #470027;
+    box-shadow: 0 0 50px 3px #000;
+}
+
+span {
+    left: 10%;
+    top: 10%;
+    box-shadow: 0 0 25px #000;
+    justify-content: center;
+    align-items: center;
+}
+
+span:nth-child(1) {
+    position: absolute;
+    width: 620px;
+    height: 620px;
+    background: #641349;
+    left: 5%;
+    top: 5%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s;
+}
+span:nth-child(2) {
+    position: absolute;
+    width: 580px;
+    height: 580px;
+    background: #6F0035;
+    left: 8%;
+    top: 8%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+}
+span:nth-child(3) {
+    position: absolute;
+    width: 540px;
+    height: 540px;
+    background: #B32851;
+    left: 11%;
+    top: 11%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+span:nth-child(4) {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #F6768E;
+    left: 14%;
+    top: 14%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.6s;
+}
+span:nth-child(5) {
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    background: #CA3767;
+    left: 17%;
+    top: 17%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.7s;
+}
+span:nth-child(6) {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: #EB5284;
+    left: 20%;
+    top: 20%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.8s;
+}
+span:nth-child(7) {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: #F6768E;
+    left: 23%;
+    top: 23%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.9s;
+}
+span:nth-child(8) {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: #FF97BB;
+    left: 26%;
+    top: 26%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+span:nth-child(9) {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #FC6C85;
+    left: 29%;
+    top: 29%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.2s;
+}
+span:nth-child(10) {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: #B3446C;
+    left: 32%;
+    top: 32%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.3s;
+}
+span:nth-child(11) {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: #DB7093;
+    left: 35%;
+    top: 35%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.4s;
+}
+span:nth-child(12) {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #B3446C;
+    left: 38%;
+    top: 38%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+span:nth-child(13) {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: #B32851;
+    left: 41%;
+    top: 41%;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.6s;
+}
+span:nth-child(13) {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #B32851;
+    left: 44%;
+    top: 44%;
+    border-radius: 50px;
+    animation-name: circle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.6s;
+}
+
+@keyframes animation {
+    0% {
+        transition: 0.7s;
+        transform: rotate(0deg);
+    }
+    20% {
+        transition: 0.7s;
+        transform: rotate(95deg);
+    }
+    50% {
+        transition: 0.7s;
+        transform: rotate(360deg);
+    }
+    100% {
+        transition: 0.7s;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes circle {
+    0% {
+        background: #470027;
+    }
+    15% {
+        background: #DB7093;
+    }
+    25% {
+        background: #B32851;
+    }
+    35% {
+        background: #470027;
+    }
+    50% {
+        background: #DB7093;
+    }
+    65% {
+        background: #6F0035;
+    }
+    75% {
+        background: #FF97BB;
+    }
+    100% {
+        background: #641349;
+    }
+
+}
